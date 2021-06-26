@@ -148,6 +148,18 @@ a.current {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+.header-mail {
+  display: flex;
+  align-items: center;
+}
+
+.header-mail-icon {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+  
+}
 .header-mail a {
   color: rgba(117, 117, 117, 1);
   display: block;
@@ -161,10 +173,23 @@ a.current {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
 }
+.header-phone-set {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.header-phone-icon {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-phone a {
   color: rgba(117, 117, 117, 1);
-  display: block;
+
 }
 .header-phone a:hover {
   color: #2196f3;
@@ -173,6 +198,11 @@ a.current {
   background-color: #2f303a;
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .btn-blue {
   color: white;
@@ -192,6 +222,7 @@ a.current {
   margin-top: 30px;
 
 }
+
 .all-about-sections {
   padding-top: 94px;
 }
@@ -200,9 +231,10 @@ a.current {
   justify-content: center;
   width: 1170px;
 }
-.all-about .item {
-  margin-right: 30px;
+.all-about .item + .item {
+  margin-left: 30px;
 }
+
 .about {
   color: #757575;
   font-style: normal;
@@ -210,6 +242,25 @@ a.current {
   font-size: 14px;
   line-height: 24px;
 }
+.item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+}
+.item-icon-svg {
+  width: 70px;
+  height: 70px;
+}
+.item-text {
+  margin-top: 0px;
+}
+
 .all-work-sections {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -270,12 +321,71 @@ a.current {
   margin-top: 5px;
   margin-bottom: 0;
 }
+.icons-list{
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin:   0 auto;
+  margin-top: 16px;
+  fill: #757575;
+}
+.icons-list .item + .item {
+  margin-left: 10px;
+}
+.links-list {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+
+}
+
+.links-list:hover {
+  background: #2196f3;
+  fill: #ffffff; 
+}
+
+.clients-sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-set {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.clients-logo {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+
+
+.clients-set :hover {
+  border-color:  #2196F3;
+  fill: #2196F3;
+  cursor: pointer;
+}
+.clients-set .item + .item {
+  margin-left: 30px;
+}
+
 .footer-sections {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 61px;
 }
-
+.footer-sections .container {
+  display: flex;
+}
 .link.footer-adress {
   color: white;
   text-decoration: none;
@@ -313,6 +423,50 @@ a.current {
 
 .white {
   color: white;
+}
+.connections {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.connections-text {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+.connections-set {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+}
+.connections-set-icon {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  fill: white;
+}
+.connections-set .item :hover {
+  background: #2196f3;
+  cursor: pointer;
+}
+.connections-set .item + .item{
+  margin-left: 10px;
+  
+}
+.connections-icon {
+  width: 20px;
+  height: 20px;
 }
 /* Portfilio*/
 .all-port-sections {
@@ -361,6 +515,7 @@ h4 {
 .container-port {
   padding-bottom: 94px;
 }
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -370,9 +525,20 @@ h4 {
 }
 
 .item-port {
+  display: block;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: cals((100%-90px)/3);
+  box-sizing: border-box;
+}
+.item-port a :hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.item-port {
+  display: block;
+}
+.item-port-img {
+  display: block;
 }
 .card-thumb {
   margin-bottom: -4.5px;

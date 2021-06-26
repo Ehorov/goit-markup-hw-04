@@ -63,7 +63,7 @@
           </ul>
           <ul class="card-set">
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
                   <img src="./images/teсhno.jpg" alt="teсhno" />
                 </div>
@@ -74,9 +74,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/poster.jpg" alt="poster" />
+                  <img class="item-port-img" src="./images/poster.jpg" alt="poster" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Постер New Orlean vs Golden Star</h4>
@@ -85,9 +85,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/seafood.jpg" alt="seafood" />
+                  <img class="item-port-img" src="./images/seafood.jpg" alt="seafood" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Ресторан Seafood</h4>
@@ -96,9 +96,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/prime.jpg" alt="prime" />
+                  <img class="item-port-img" src="./images/prime.jpg" alt="prime" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Проект Prime</h4>
@@ -107,9 +107,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/boxes.jpg" alt="boxes" />
+                  <img class="item-port-img" src="./images/boxes.jpg" alt="boxes" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Проект Boxes</h4>
@@ -118,9 +118,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/inspiration.jpg" alt="inspiration" />
+                  <img class="item-port-img" src="./images/inspiration.jpg" alt="inspiration" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Inspiration has no Borders</h4>
@@ -129,9 +129,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/limited.jpg" alt="limited" />
+                  <img class="item-port-img" src="./images/limited.jpg" alt="limited" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Издание Limited Edition</h4>
@@ -140,9 +140,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/lab.jpg" alt="lab" />
+                  <img class="item-port-img" src="./images/lab.jpg" alt="lab" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Проект LAB</h4>
@@ -151,9 +151,9 @@
               </a>
             </li>
             <li class="item-port">
-              <a href="" class="card">
+              <a href="">
                 <div class="card-thumb">
-                  <img src="./images/growing.jpg" alt="growing" />
+                  <img class="item-port-img" src="./images/growing.jpg" alt="growing" />
                 </div>
                 <div class="card-content">
                   <h4 class="card-heading">Growing Business</h4>
@@ -167,29 +167,64 @@
     </main>
     <footer class="footer-sections">
       <div class="container">
-        <a class="webstudio white" href="./index.html"
-          ><span class="txt-bl">Web</span>Studio</a>
-        <address>
-          <ul class="footer-all">
-            <li>
-              <a
-                class="map link footer-adress"
-                href="https://bit.ly/3ffIdBp"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li>
-              <a href="mailto:info@example.com" class="footer-mail">info@example.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
+          <div class="container-adress">
+          <a class="webstudio white" href="./index.html"
+            ><span class="txt-bl">Web</span>Studio</a>
+          <address>
+            <ul class="footer-all">
+              <li>
+                <a
+                  class="map link footer-adress"
+                  href="https://bit.ly/3ffIdBp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="footer-mail">info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+          </div>
+          <div class="connections">
+            <h2 class="connections-text">присоединяйтесь</h2>
+            <ul class="connections-set">
+              <li class="item">
+                <a class="connections-set-icon">
+                  <svg class="connections-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram_footer"></use>       
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="connections-set-icon">
+                  <svg class="connections-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter_footer"></use>       
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="connections-set-icon">
+                  <svg class="connections-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook_footer"></use>       
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="connections-set-icon">
+                  <svg class="connections-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin_footer"></use>       
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+    </div>
     </footer>
   </body>
 </html>
