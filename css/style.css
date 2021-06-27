@@ -154,8 +154,6 @@ a.current {
 }
 
 .header-mail-icon {
-  height: 12px;
-  width: 16px;
   margin-right: 10px;
   fill: currentColor;
   
@@ -181,8 +179,6 @@ a.current {
   justify-content: center;
 }
 .header-phone-icon {
-  height: 16px;
-  width: 10px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -359,15 +355,16 @@ a.current {
   margin-top: 50px;
 }
 .clients-logo {
-  display: block;
+  display: flex;
   width: 170px;
   height: 92px;
+  justify-content: center;
+  align-items: center;
   padding: 16px 32px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
 }
-
 
 .clients-set :hover {
   border-color:  #2196F3;
@@ -525,23 +522,21 @@ h4 {
 }
 
 .item-port {
-  display: block;
+  display: flex;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: cals((100%-90px)/3);
-  box-sizing: border-box;
+  
 }
-.item-port a :hover {
+.item-port:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.item-port {
-  display: block;
-}
-.item-port-img {
-  display: block;
-}
+
 .card-thumb {
   margin-bottom: -4.5px;
+}
+.card-thumb :hover {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 .card-content {
   padding: 20px 24px;
