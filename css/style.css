@@ -131,7 +131,9 @@ a.current {
 
 .header-link a:hover {
   color: #2196f3;
-  
+}
+.header-link a:focus {
+  color: #2196f3;
 }
 .header-contacts {
   display: flex;
@@ -160,9 +162,13 @@ a.current {
 }
 .header-mail a {
   color: rgba(117, 117, 117, 1);
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .header-mail a:hover {
+  color: #2196f3;
+}
+.header-mail a:focus {
   color: #2196f3;
 }
 .header-phone {
@@ -174,9 +180,9 @@ a.current {
 
 }
 .header-phone-set {
-  display: block;
+  display: flex;
   align-items: center;
-  justify-content: center;
+
 }
 .header-phone-icon {
   margin-right: 10px;
@@ -186,8 +192,12 @@ a.current {
 .header-phone a {
   color: rgba(117, 117, 117, 1);
 
+
 }
 .header-phone a:hover {
+  color: #2196f3;
+}
+.header-phone a:focus {
   color: #2196f3;
 }
 .main-header-sections {
@@ -293,6 +303,8 @@ a.current {
 .team-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 
 }
 .team-employee {
@@ -320,8 +332,6 @@ a.current {
 .icons-list{
   display: flex;
   justify-content: space-between;
-  width: 206px;
-  margin:   0 auto;
   margin-top: 16px;
   fill: #757575;
 }
@@ -340,6 +350,10 @@ a.current {
 }
 
 .links-list:hover {
+  background: #2196f3;
+  fill: #ffffff; 
+}
+.links-list:focus {
   background: #2196f3;
   fill: #ffffff; 
 }
@@ -367,6 +381,11 @@ a.current {
 }
 
 .clients-set :hover {
+  border-color:  #2196F3;
+  fill: #2196F3;
+  cursor: pointer;
+}
+.clients-set :focus {
   border-color:  #2196F3;
   fill: #2196F3;
   cursor: pointer;
@@ -453,10 +472,12 @@ a.current {
   background: rgba(255, 255, 255, 0.1);
   fill: white;
 }
-.connections-set .item :hover {
+.connections-set-icon:hover {
   background: #2196f3;
-  cursor: pointer;
 }
+.connections-set-icon:focus {
+  background: #2196f3;
+  }
 .connections-set .item + .item{
   margin-left: 10px;
   
@@ -486,6 +507,13 @@ a.current {
   white-space: nowrap;
 }
 .btn-port:hover {
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-port:focus {
   color: white;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -528,16 +556,16 @@ h4 {
   flex-basis: cals((100%-90px)/3);
   
 }
-.item-port:hover {
+.item-port-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.item-port-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .card-thumb {
   margin-bottom: -4.5px;
 }
-.card-thumb :hover {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-}
+
 .card-content {
   padding: 20px 24px;
   border: 1px solid rgba(238, 238, 238, 1);
